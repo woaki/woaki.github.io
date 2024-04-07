@@ -23,6 +23,7 @@
 <blockquote>
 <table border=1>
 <!-- <div style="text-align: justify"> Corresponding to Section 5.1 of the paper,the following demos are synthesized by different methods with the same text as input, i.e., 让那些小主顾们等一等到吧 (English Translation: Let those little customers wait a while). The task is to synthesized speech with the same emotion as that from emotion reference audio (the first column) and the same voice as that from target speaker reference audio (the second column). It can be found that compared to both  Mspk-GST and Mspk-VAE,  the proposed method can achieve a good balance between maintaining the target speaker's identity and enriching the transferred emotional expression. </div> -->
+<!-- "They went up to the dark mass job had pointed out."<br></br> -->
 <tr>
 <td align="center"><span>Emotion</span></td>
 <td align="center"><span>Reference Audio</span></td>
@@ -215,52 +216,62 @@
 <td><audio controls><source src="samples/eoae_demo/vae/101020-26.wav"></audio></td>
 <td><audio controls><source src="samples/eoae_demo/edm/101020-26.wav"></audio></td>
 </tr>
-<tr>
-<td>Hate</td>
-<td><audio controls><source src="samples/zh_demo/ref_emo/101020-26.wav"></audio></td>
-<td><audio controls><source src="samples/zh_demo/ref_spk/101020-26.wav"></audio></td>
-<td><audio controls><source src="samples/zh_demo/proposed/101020-26.wav"></audio></td>
-<td><audio controls><source src="samples/zh_demo/gst/101020-26.wav"></audio></td>
-<td><audio controls><source src="samples/zh_demo/vae/101020-26.wav"></audio></td>
-<td><audio controls><source src="samples/zh_demo/edm/101020-26.wav"></audio></td>
-</tr>
-<tr>
-<td>Fear</td>
-<td><audio controls><source src="samples/zh_demo/ref_emo/101020-26.wav"></audio></td>
-<td><audio controls><source src="samples/zh_demo/ref_spk/101020-26.wav"></audio></td>
-<td><audio controls><source src="samples/zh_demo/proposed/101020-26.wav"></audio></td>
-<td><audio controls><source src="samples/zh_demo/gst/101020-26.wav"></audio></td>
-<td><audio controls><source src="samples/zh_demo/vae/101020-26.wav"></audio></td>
-<td><audio controls><source src="samples/zh_demo/edm/101020-26.wav"></audio></td>
-</tr>
 </table>
 <br/>
 </blockquote>
-<h4>5. Extra samples on controllable emotional speech synthesis </h4>
+<h4>4. Extra samples on controllable emotional speech synthesis </h4>
 <blockquote>
 <table border=1>
-<div style="text-align: justify"> In particular, we choose some sentences with obvious emotions (from the text) to synthesize emotional speeches of different strengths. </div>
+<!-- <div style="text-align: justify"> In particular, we choose some sentences with obvious emotions (from the text) to synthesize emotional speeches of different strengths. </div> -->
 <tr>
-<br/>
-【Fear】我，我再也不敢动了。(English Translation: I-I don't dare to move anymore.)<br>
-<br/>
-<td align="center"><span>emotion</span></td>
-<td align="center"><span>Emotion reference audio</span></td>
-<td align="center"><span>Target speaker reference audio</span></td>
+<!-- <br/> -->
+<!-- 【Fear】我，我再也不敢动了。(English Translation: I-I don't dare to move anymore.)<br> -->
+<!-- <br/> -->
+<td align="center"><span>Emotion</span></td>
+<!-- <td align="center"><span>Emotion reference audio</span></td> -->
+<td align="center"><span>Target Speaker</span></td>
 <td align="center"><span>Weak</span></td>
 <td align="center"><span>Medium</sub><span></td>
 <td align="center"><span>Strong</sub><span></td>
 </tr>
 <tr>
-<td>fear</td>
-<td><audio controls><source src="demo/ref_emo/101020-26.wav"></audio></td>
-<td><audio controls><source src="demo/ref_spk/101020-26.wav"></audio></td>
-<td><audio controls><source src="demo/extra_samples/adult_260151-260151_fea-NC.wav"></audio></td>
-<td><audio controls><source src="demo/extra_samples/adult_260151-260151_fea-M+.wav"></audio></td>
-<td><audio controls><source src="demo/extra_samples/adult_260151-260151_fea-H1.wav"></audio></td>
+<td>Angry</td>
+<!-- <td><audio controls><source src="demo/ref_emo/101020-26.wav"></audio></td> -->
+<td><audio controls><source src="samples/zh_demo/ref_spk/"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/angry_s1_weak.wav"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/angry_s1_medium.wav"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/angry_s1_strong.wav"></audio></td>
+</tr>
+<tr>
+<td>Happy</td>
+<td><audio controls><source src="samples/zh_demo/ref_spk/"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/happy_s2_weak.wav"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/happy_s2_medium.wav"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/happy_s2_strong.wav"></audio></td>
+</tr>
+<tr>
+<td>Surprise</td>
+<td><audio controls><source src="samples/zh_demo/extral/"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/surprise_s4_weak.wav"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/surprise_s4_medium.wav"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/surprise_s4_strong.wav"></audio></td>
+</tr>
+<!-- <tr>
+<td>Neutral</td>
+<td><audio controls><source src="samples/zh_demo/extral/"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/"></audio></td>
+</tr> -->
+<tr>
+<td>Sad</td>
+<td><audio controls><source src="samples/zh_demo/extral/"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/sad_s3_weak.wav"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/sad_s3_medium.wav"></audio></td>
+<td><audio controls><source src="samples/zh_demo/extral/sad_s3_strong.wav"></audio></td>
 </tr>
 </table>
-<br/>
+<!-- <br/>
 <tr> 
 <table border=1>
 <br/>
@@ -363,4 +374,4 @@
 </tr>
 </table>
 <br/>
-</blockquote>
+</blockquote> -->
